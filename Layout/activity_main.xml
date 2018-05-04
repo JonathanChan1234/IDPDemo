@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jonathan.idpdemo2.MainActivity"
+    android:background="@drawable/logo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="190sp"
+                android:layout_height="200sp"
+                android:id="@+id/extendButton"
+                android:text="Parking"/>
+            <Button
+                android:layout_width="190sp"
+                android:layout_height="200sp"
+                android:id="@+id/checkEmptySpotButton"
+                android:text="Check Empty Spot"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="190sp"
+                android:layout_height="200sp"
+                android:id="@+id/accountButton"
+                android:text="Account"/>
+            <Button
+                android:layout_width="190sp"
+                android:layout_height="200sp"
+                android:id="@+id/signOutButton"
+                android:text="Sign Out"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/accountText"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

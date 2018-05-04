@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExtendActitvity2">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please choose how much time you want to extend"
+        android:textColor="@color/Black"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car spot ID "
+            android:id="@+id/carSpotText"
+            android:textColor="@color/Black"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/remainingTimeText"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addTimeButton"
+            android:text="+"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="00:00"
+            android:id="@+id/extendPeriodText"
+            android:textColor="@color/Black"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/minusTimeButton"
+            android:text="-"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confrimExtendButton"
+        android:text="Confirming extending"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exitButton"
+        android:text="Exit (You will not be allowed to extend online)"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/warningExtendText"
+        android:textSize="20sp"
+        android:textColor="@color/Red"/>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
