@@ -69,6 +69,7 @@ public class AccountActivity extends AppCompatActivity {
                             editor.putBoolean(MainActivity.accountLogInField, true);
                             editor.commit();
                             startActivity(intent);
+                            Log.d("Hello", "It is an unreachable code")
                             }
                             else{   //Wrong Password
                                 Toast.makeText(AccountActivity.this, "Wrong Password", Toast.LENGTH_SHORT).show();
